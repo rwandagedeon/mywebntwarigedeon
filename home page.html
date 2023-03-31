@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <style>
+            body {
+  box-sizing: border-box;
+}
+.header{
+                margin-top: -30px;
+                padding: 0px;
+                background: turquoise;
+                height: 70px;
+                font-weight: bold;
+                text-align: center;
+            }
+#active{
+                background-color: gray;
+                color: black;
+            }
+            .header >p{
+                padding: 15px;
+	            font-size: 30px;
+            }
+            .navbar {
+                overflow: hidden;
+                background-color: navy;
+            }
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover {
+  background-color: red;
+  color: black;
+}
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: aquamarine;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: chartreuse;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: gray;
+  padding: 20px;
+}
+            .col-25 {
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 75%;
+  margin-top: 6px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Share Your Book</h1>
+        </div>
+        <div class="navbar">
+            <a href="curriculum.html">HOME</a>
+            <a href="practice.html">Edu/Work</a>
+            <a href="holland.html" id="active">Share</a>
+        </div>
+        <div class="container">
+            <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname"><b>FirstName</b></label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname"><b>LastName</b></label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email"><b>Email</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Email..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="telNo"><b>PhoneN</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="telNo" id="telNo" name="telNo" placeholder="eg:+2507..">
+                </div>   
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label for="bookname"><b>Book Name</b></label>
+            </div>
+            <div class="col-75">
+                <input type="bookname" id="bookname" name="bookname" placeholder="nameofthebook">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="author"><b>Author</b></label>
+            </div>
+            <div class="col-75">
+                <input type="author" id="author" name="author" placeholder="book author..">
+            </div>
+        </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="languages"><b>written in</b></label>
+              </div>
+              <div class="col-75">
+                <select id="languages" name="languages">
+                  <option value="english">English</option>
+                  <option value="kiswahili">kiswahili</option>
+                  <option value="french">french</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>
+                        <b>Published Date</b>
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="date" name="pdate">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject"><b>FirstName</b></label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write a book summary.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+          </div>
+    </body>
+</html>
